@@ -12,7 +12,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight); 
+  createCanvas(500*2, 500); 
   poem = sourceText.join(' ');
   textFont("Times New Roman");
 }
@@ -26,7 +26,7 @@ function draw() {
   noCursor();
   
   let charIndex = startIndex;
-  let w = width / hug.width;
+  let w = (width/2) / hug.width;
   let h = height / hug.height;
   hug.loadPixels();
   
@@ -73,6 +73,10 @@ function draw() {
     text("🤝", x1, y1);
   } else if (mouseIsPressed === true && d < 20){
     text("👋", x1, y1);
+    textAlign(RIGHT);
+    fill(30);
+    textSize(w);
+    text("no jaló.", width-15, height-20);
   }
 }
 
