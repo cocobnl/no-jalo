@@ -12,7 +12,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(500*2, 500); 
+  createCanvas(1920/2, 1080/2);
   poem = sourceText.join(' ');
   textFont("Times New Roman");
 }
