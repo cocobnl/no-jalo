@@ -64,7 +64,7 @@ function draw() {
   
   startIndex++;
   
-  textSize(w*2);
+  textSize(w*3);
   if (mouseIsPressed === false && d > 15){
     text("✋", x1, y1);
     text("🤚",x2, y2);
