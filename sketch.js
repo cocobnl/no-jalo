@@ -5,6 +5,8 @@ let sourceText;
 let poem;
 let hug;
 let startIndex = 0;
+let xoff = 0.0;
+let yoff = 100000.0;
 
 function preload() {
   hug = loadImage("hugemo40.jpg");
@@ -12,13 +14,10 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1920/2, 1080/2);
+  createCanvas(windowWidth, 0.5625*windowWidth);
   poem = sourceText.join(' ');
   textFont("Times New Roman");
 }
-
-let xoff = 0.0;
-let yoff = 100000.0;
 
 function draw() {
   background(0);
